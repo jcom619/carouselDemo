@@ -9,14 +9,14 @@ html,body{
   margin:0;
   padding:0;
 
-  max-width:80rem;
+  /* max-width:80rem; */
   height: 98%;
   font-family:DIN, skia, helvetica, sanns-serif;
 }
 iframe {
   border-radius: 10px;
-  border 5px solid black;
-  box-shadow: 0 0 20px 4px black;
+  border: 5px solid black;
+  box-shadow: 0 0 2px 4px black;
   padding: 0;
   margin: 0;
 }
@@ -88,8 +88,8 @@ iframe {
   position:absolute;
   width:30px;
   height:20px;
-  border-radius:50%;
-  top:-20px;
+  /* border-radius:50%; */
+  top:20px;
   left:60px;
  }
 
@@ -98,31 +98,34 @@ iframe {
   position:absolute;
   width:50px;
   height: 800px;
-  order-radius:50%;
+  border-radius:50%;
   bottom:-20px;
   left:60px;
  }
 
 .content-wrapper{
-  width:calc(100% - 100px);
+  height:calc(100% - 100px);
   position:relative;
-  left:3em;
-  height:100%;
+  bottom:0;
+  height:100vh;
   overflow:hidden;
-  padding:1px;
+  /* padding:1px; */
   display:flex;
   justify-content:center;
+  align-content: center;
 }
 
 .screen{
   width:calc(100% - 100px);
   max-width:100%;
-  height:100%;
+  height:400%;
+  margin-top:0;
+  margin-bottom:0;
   position:absolute;
-  top:-100%;
+  /* margin-bottom:-500px; */
   opacity:0;
   display:grid;
-  grid-template-rows:50px auto auto;
+  grid-template-rows:0px auto auto;
   grid-template-columns:100%;
   grid-template-areas:'heading' 'text' 'image';
   transition:all 1s ease;
@@ -130,8 +133,8 @@ iframe {
 }
 
 .screen.visible{
-  top:55px;
-  bottom: 0;
+  top:-50%;
+  /* bottom: -65vh; */
   opacity:1;
   transition:all 1.5s ease;
   transition-delay:0.8s ease;
@@ -177,14 +180,15 @@ button:focus {
   display:flex;
 }
 
-/* .image{
-  width:100%;
+.image{
+  width:100vw;
+  /* margin-bottom:-400px; */
   border-radius:50%;
   background-size:cover;
   background-position:center center;
-} */
+}
 
-/* h2{
+h2{
   font-size:20px;
   position:relative;
   text-align:center;
@@ -196,7 +200,7 @@ h2:after{
   width:70px;
   height:5px;
   background:#1fc058;
-  left:calc(50% - 35px);
+  /* left:calc(50% - 50px); */
   bottom:-15px;
 }
- */
+
