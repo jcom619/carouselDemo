@@ -104,10 +104,10 @@ iframe {
  }
 
 .content-wrapper{
-  width:100vw;
+  width:97%;
   position:absolute;
-  /* left:3em; */
-  height:100%;
+  /* left:3%; */
+  height:86%;
   overflow:hidden;
   padding:1px;
   display:flex;
