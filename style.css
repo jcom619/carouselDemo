@@ -107,7 +107,7 @@ iframe {
   width:100%;
   position:absolute;
   /* left:3%; */
-  height:100vh;
+  height:100%;
   overflow:hidden;
 /*   padding:1px; */
   display:flex;
@@ -130,7 +130,7 @@ iframe {
 }
 
 .screen.visible{
-  top:100px;
+/*   top:100px; */
   bottom: 0;
   opacity:1;
   transition:all 1.5s ease;
