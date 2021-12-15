@@ -177,8 +177,8 @@ button:focus {
   display:flex;
 }
 iframe {
-  width:100vw;
-  margin-left:-0px;
+/*   width:100vw;
+  margin-left:-0px; */
 /*   margin-right:-1px; */
 }
 /* .image{
